@@ -121,6 +121,7 @@ def evaluate_parameters(rule_parameters):
 # Helper Functions #
 ####################
 
+
 # Build an error to be displayed in the logs when the parameter is invalid.
 def build_parameters_value_error_response(ex):
     """Return an error dictionary when the evaluate_parameters() raises a ValueError.
@@ -230,6 +231,7 @@ def build_evaluation_from_config_item(
 ####################
 # Boilerplate Code #
 ####################
+
 
 # Get execution role for Lambda function
 def get_execution_role_arn(event):
@@ -368,7 +370,6 @@ def get_assume_role_credentials(role_arn, region=None):
 
 # This removes older evaluation (usually useful for periodic rule not reporting on AWS::::Account).
 def clean_up_old_evaluations(latest_evaluations, event):
-
     cleaned_evaluations = []
 
     old_eval = AWS_CONFIG_CLIENT.get_compliance_details_by_config_rule(
