@@ -2,7 +2,7 @@
 # account)
 astroid==3.0.2
 aws-sam-cli==1.107.0
-boto3==1.34.17
+boto3==1.34.78
 botocore==1.34.17
 pip~=23.3
 pyyaml~=6.0.1
