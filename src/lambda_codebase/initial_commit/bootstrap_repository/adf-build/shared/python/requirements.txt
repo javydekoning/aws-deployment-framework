@@ -1,6 +1,6 @@
 # Install libs here that you might want in the ADF Shared Python Lambda Layer
 boto3==1.34.17
-botocore==1.34.17
+botocore==1.34.78
 pyyaml~=6.0.1
 schema~=0.7.5
 tenacity==8.2.3
